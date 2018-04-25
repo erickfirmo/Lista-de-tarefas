@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="utf-8" />
+   <title>Lista de Tarefas</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="assets/style/bootstrap/dist/css/bootstrap.min.css">
+
+   <style>
+   
+   body {
+      background-color: rgb(25, 160, 88);
+
+   }
+
+   ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+   }
+
+
+   .taskContent {
+      font-size: 14px;
+   }
+
+   .taskContainer {
+      background-color: #ffffff;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 5px;
+      display: block;
+      width: 270px;
+      box-shadow: 1px 1px 3px #b3b3b3;
+   }
+
+   .listContainer {
+      background-color: #d5d5d5;
+      width: 280px;
+      margin: 0px 0px 5px 5px;
+      min-height: 100px;
+      padding: 10px 5px;
+      border-radius: 5px;
+      display: inline-block;
+      vertical-align: top;
+   }
+
+   .noContent {
+      color: #ccc;
+   }
+
+
+   .quadro {
+      background-size: fully;
+      min-height: 100%;
+      padding: 10px 0;
+      white-space: nowrap;
+   }
+
+   .novaLista {
+      background-color: rgba(0, 0, 0, .5);
+      width: 280px;
+      margin: 10px;
+      min-height: 40px;
+      padding: 10px 5px;
+      border-radius: 5px;
+      display: inline-block;
+      vertical-align: top;
+   }
+   </style>
+</head>
+<body>
+
+<div class="container-fluid">
+   <div class="col-md-12">
+      <div class="row">
+         <input placeholder="Lista" type="text" id="inputListTitle" class="form-control d-inline" required autofocus>
+         <button type="button" onclick='createList("project")' class="btn btn-primary">Criar Lista</button>
+      </div> 
+   </div>
+</div>
+
+<div class="quadro" id='project'>
+   
+   
+</div>
+
+<script src="../controllers/TaskController.js"></script>
+<script src="../controllers/ListController.js"></script>
+
+<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+

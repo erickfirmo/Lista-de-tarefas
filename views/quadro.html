@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="utf-8" />
+   <title>Lista de Tarefas</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+   <style>
+   
+   body {
+      background-color: rgb(195, 67, 79);
+   }
+
+   ul {
+      margin: 0;
+      padding: 0;
+      list-style:none;
+   }
+
+   img {
+      width: 340px;
+
+   }
+
+   .taskContent {
+      font-size: 16px;
+   }
+
+   .taskBox {
+      background-color: #ffffff;
+      border-radius: 5px;
+      padding: 10px;
+      margin: 20px auto;
+      display: block;
+      width: 270px;
+      box-shadow: 1px 1px 3px #b3b3b3;
+   }
+
+   .noTitle {
+      color: #ccc;
+   }
+   
+   .noDescrip {
+      color: #ccc;
+
+   }
+
+   .quadro {
+      background-color: #9c1e1e;
+      width: 100%;
+      padding: 10px;
+      min-height: 100px;
+   }
+
+
+   .lista {
+      background-color: #d5d5d5;
+      width: 280px;
+      margin: 10px;
+      min-height: 100px;
+      padding: 10px 5px;
+      border-radius: 5px;
+      box-shadow: 1px 1px 3px #b3b3b3;
+      display: inline-block;
+      vertical-align: top;
+   }
+   </style>
+  
+</head>
+<body>
+
+<!--
+<ul id="notas">
+   <li class="tom">DO</li>
+   <li class="semi-tom">DO#</li>
+
+   <li class="tom">RÉ</li>
+   <li class="semi-tom">RÉ#</li>
+
+   <li class="tom">MI</li>
+
+   <li class="tom">FA</li>
+   <li class="semi-tom">FA#</li>
+
+   <li class="tom">SOL</li>
+   <li class="semi-tom">SOL#</li>
+
+   <li class="tom">LÁ</li>
+   <li class="semi-tom">LÁ#</li>
+
+   <li class="tom">SI</li>
+</ul>
+
+-->
+
+<div class="container-fluid">
+   <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+
+         <div class="row">
+            <div class="col-md-4">
+               <input placeholder="Tarefa" type="text" id="inputTitle" class="form-control d-inline" required autofocus>
+            </div>
+            <div class="col-md-4">
+               <input placeholder="Descrição" type="text" id="inputDescrip" class="form-control d-inline" required autofocus>
+            </div>
+            <div class="col-md-4">
+               <button type="button" onclick='createTask("list-1")' class="btn btn-primary">Criar Tarefa</button>
+            </div>
+         </div>
+         
+      </div>
+      <div class="col-md-3"></div>
+   </div>
+</div>
+
+<div class="container-fluid quadro">
+   
+
+</div>
+
+
+
+
+'<input placeholder="Tarefa" type="text" id="inputTitle" class="form-control d-inline" required autofocus>
+<input placeholder="Descrição" type="text" id="inputDescrip" class="form-control d-inline" required autofocus>
+<button type="button" onclick='createTask("'+list+'")' class="btn btn-primary">Criar Tarefa</button>'
+
+
+
+
+
+
+
+
+
+
+<script src="main.js"></script>
+
+
+
+<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
