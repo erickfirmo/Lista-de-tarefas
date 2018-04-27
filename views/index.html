@@ -5,71 +5,17 @@
    <title>Lista de Tarefas</title>
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="assets/styles/bootstrap/dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="assets/styles/bootstrap/compiler/style.css">
 
-   <style>
-   
-   body {
-      background-color: rgb(25, 160, 88);
-
-   }
-
-   ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-   }
-
-
-   .taskContent {
-      font-size: 14px;
-   }
-
-   .taskContainer {
-      background-color: #ffffff;
-      border-radius: 5px;
-      padding: 10px;
-      margin-bottom: 5px;
-      display: block;
-      width: 270px;
-      box-shadow: 1px 1px 3px #b3b3b3;
-   }
-
-   .listContainer {
-      background-color: #d5d5d5;
-      width: 280px;
-      margin: 0px 0px 5px 5px;
-      min-height: 100px;
-      padding: 10px 5px;
-      border-radius: 5px;
-      display: inline-block;
-      vertical-align: top;
-   }
-
-   .noContent {
-      color: #ccc;
-   }
-
-
-   .quadro {
-      background-size: fully;
-      min-height: 100%;
-      padding: 10px 0;
-      white-space: nowrap;
-   }
-
-   .novaLista {
-      background-color: rgba(0, 0, 0, .5);
-      width: 280px;
-      margin: 10px;
-      min-height: 40px;
-      padding: 10px 5px;
-      border-radius: 5px;
-      display: inline-block;
-      vertical-align: top;
-   }
-   </style>
 </head>
 <body>
+   
+<script src="partials/partials.js"></script>
+
+
+<script>
+   includeTopbar();
+</script>
 
 <div class="container-fluid">
    <div class="col-md-12">
@@ -81,13 +27,16 @@
 </div>
 
 <div class="quadro" id='project'>
+   <div class="newList"></div>
    
    
 </div>
 
+<!--controllers-->
 <script src="../controllers/TaskController.js"></script>
 <script src="../controllers/ListController.js"></script>
 
+<!--libraries-->
 <script src="assets/fonts/fontawesome/svg-with-js/js/fontawesome-all.min.js"></script>
 <script src="assets/jquery/jquery/dist/jquery.min.js"></script>
 <script src="assets/jquery/jquery-mask-plugin/dist/jquery.mask.min.js"></script>

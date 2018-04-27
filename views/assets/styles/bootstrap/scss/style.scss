@@ -1,0 +1,48 @@
+.listContainer {
+   background-color: #d5d5d5;
+   width: 280px;
+   margin: 0px 0px 5px 5px;
+   min-height: 100px;
+   padding: 10px 5px;
+   border-radius: 5px;
+   display: inline-block;
+   vertical-align: top;
+}
+
+.taskContainer {
+   background-color: #ffffff;
+   border-radius: 5px;
+   padding: 10px;
+   margin-bottom: 5px;
+   display: block;
+   width: 270px;
+   box-shadow: 1px 1px 3px #b3b3b3;
+}
+
+.taskContent {
+   font-size: 14px;
+}
+
+
+
+.noContent {
+   color: #ccc;
+}
+
+.quadro {
+   background-size: fully;
+   min-height: 100%;
+   padding: 10px 0;
+   white-space: nowrap;
+}
+
+.newList {
+   background-color: rgba(0, 0, 0, .5);
+   width: 280px;
+   margin: 10px;
+   min-height: 40px;
+   padding: 10px 5px;
+   border-radius: 5px;
+   display: inline-block;
+   vertical-align: top;
+}
